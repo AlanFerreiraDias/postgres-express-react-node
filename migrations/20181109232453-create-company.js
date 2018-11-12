@@ -21,10 +21,10 @@ module.exports = {
         type: Sequelize.STRING
       },
       address: {
-        type: Sequelize.STRING
+        type: Sequelize.JSONB
       },
       phone: {
-        type: Sequelize.STRING
+        type: Sequelize.JSONB
       },
       created_at: {
         allowNull: false,

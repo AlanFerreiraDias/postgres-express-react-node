@@ -5,8 +5,8 @@ module.exports = (sequelize, DataTypes) => {
     trade_name: DataTypes.STRING,
     legal_type: DataTypes.STRING,
     registration_number: DataTypes.STRING,
-    address: DataTypes.STRING,
-    phone: DataTypes.STRING
+    address: DataTypes.JSONB,
+    phone: DataTypes.JSONB
   }, {
     underscored: true,
   });

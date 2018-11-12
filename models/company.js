@@ -9,10 +9,11 @@ module.exports = (sequelize, DataTypes) => {
     phone: DataTypes.JSONB
   }, {
     underscored: true,
+    freezeTableName: true,
+    tableName: 'company'
   });
   company.associate = function(models) {
     // associations can be defined here
-    company.hasMany(models.phone)
   };
   return company;
 };
